@@ -1,18 +1,35 @@
-## Explain
+# Signal Class Overview
 
-The class functions similarly to the **Godot Signal**.
+The Signal class provides functionality similar to the **Godot Signal** system, allowing you to create and manage custom events in your project.
 
-When you create a new signal, you specify **parameters** that define the **types of methods** that can be connected.
+## How It Works
 
-For example, if you create a signal with a **single String parameter**, you **cannot connect** a method that expects an **Integer parameter**.</p>
-When the signal is **emitted**, all **connected methods are triggered** with the **parameters** provided by the **emit function**.</p>
+When you create a new signal, you define the **parameters** it will use. These parameters dictate the **types of methods** that can be connected to the signal.
 
-The connected methods **cannot return any values**.
+### Key Concepts
 
-## How to set up
+- **Parameter Matching:**  
+  When you define a signal with a specific parameter type (e.g., a **String parameter**), only methods with a matching parameter type (in this case, a **String**) can be connected. Methods with incompatible parameters (e.g., an **Integer**) cannot be connected.
 
-Download the last version and put the `signal.jar`
+- **Emitting Signals:**  
+  When a signal is emitted, all methods connected to that signal are triggered. The **emit function** passes the defined parameters to the connected methods.
 
-Put the `signal.jar` in your Project folder
+- **No Return Values:**  
+  Connected methods do not return any values when called by the signal. The signal system is purely for triggering events, not for receiving feedback from the connected methods.
 
-When you compile and execute your code you add `-cp "filepath/signal.jar"`
+## Setup Instructions
+
+To integrate the Signal class into your project:
+
+1. **Download the Latest Version:**  
+   Obtain the latest version of `signal.jar`.
+
+2. **Add to Project:**  
+   Place `signal.jar` in your project folder.
+
+3. **Compile and Run Your Code:**  
+   When compiling and running your project, include the `signal.jar` in your classpath by using the following command:
+
+   ```bash
+   javac -cp "filepath/signal.jar" YourMainClass.java
+   java -cp "filepath/signal.jar" YourMainClass
