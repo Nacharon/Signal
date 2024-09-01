@@ -1,18 +1,18 @@
-## Getting Started
+## Explain
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+The class functions similarly to the **Godot Signal**.
 
-## Folder Structure
+When you create a new signal, you specify **parameters** that define the **types of methods** that can be connected.
 
-The workspace contains two folders by default, where:
+For example, if you create a signal with a **single String parameter**, you **cannot connect** a method that expects an **Integer parameter**.</p>
+When the signal is **emitted**, all **connected methods are triggered** with the **parameters** provided by the **emit function**.</p>
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+The connected methods **cannot return any values**.
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+## How to set up
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+Download the last version and put the `signal.jar`
 
-## Dependency Management
+Put the `signal.jar` in your Project folder
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+When you compile and execute your code you add `-cp "filepath/signal.jar"`
