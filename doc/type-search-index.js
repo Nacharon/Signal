@@ -1,1 +1,0 @@
-typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"signal.exception","l":"InvalidConnectionException"},{"p":"signal.exception","l":"InvalidMethodNameException"},{"p":"signal.exception","l":"InvalidMethodParametreException"},{"p":"signal","l":"Signal"}];updateSearchResults();
