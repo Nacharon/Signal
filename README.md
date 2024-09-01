@@ -33,3 +33,8 @@ To integrate the Signal class into your project:
    ```bash
    javac -cp "filepath/signal.jar" YourMainClass.java
    java -cp "filepath/signal.jar" YourMainClass
+
+
+## Documentation
+
+You can find the full documentation [here](https://nacharon.github.io/Signal-Documentation/).
