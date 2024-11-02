@@ -1,19 +1,19 @@
 package signal.exception;
 
 /**
- * <p>This Exception is thrown when the method name is incorrect.</p>
+ * <p>This exception is thrown when a method name is incorrect.</p>
  * 
  * @author Nacharon
- * @version 1.0
+ * @version 1.1
  * @since 1.0
  */
 public class InvalidMethodNameException extends Exception
 {
     /**
-     * Create the exception.
+     * Constructs the exception.
      * 
-     * @param error_message The error message that will be displayed.
-     * @param error The exception that caused this exception.
+     * @param error_message the error message that will be displayed
+     * @param error the exception that caused this exception
      * 
      * @since 1.0
      */
@@ -23,9 +23,9 @@ public class InvalidMethodNameException extends Exception
     }
 
     /**
-     * Create the exception.
+     * Constructs the exception.
      * 
-     * @param error_message The error message that will be displayed.
+     * @param error_message the error message that will be displayed
      * 
      * @since 1.0
      */
