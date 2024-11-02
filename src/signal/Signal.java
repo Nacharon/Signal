@@ -192,7 +192,7 @@ public class Signal
                 if (dict.get("Method") instanceof Method method)
                     method.invoke(dict.get("Object"), parameters);
             }
-            catch(InvocationTargetException error)
+            catch(InvocationTargetException | IllegalArgumentException error)
             {
                 throw new InvalidMethodParametreException("The given parameters " + this.getParametersString(parameters) + " not match with Signal parametters in class " + this.getParametersString(this.parameter_types));
             }
